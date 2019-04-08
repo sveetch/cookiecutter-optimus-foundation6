@@ -63,11 +63,11 @@ install: venv
 .PHONY: install
 
 po:
-	@echo "Pretending to update PO files"
+	$(OPTIMUS) po --update
 .PHONY: po
 
 mo:
-	@echo "Pretending to build MO files"
+	$(OPTIMUS) po --compile
 .PHONY: mo
 
 css:
