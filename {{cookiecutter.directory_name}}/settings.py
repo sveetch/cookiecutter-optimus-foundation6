@@ -29,7 +29,7 @@ LOCALES_DIR = os.path.join(PROJECT_DIR, 'locale')
 LANGUAGE_CODE = "en_US"
 
 # A list of locale name for all available languages to manage with PO files
-LANGUAGES = (LANGUAGE_CODE,)
+LANGUAGES = (LANGUAGE_CODE, "fr_FR")
 
 # The static url to use in templates and with webassets
 # This can be a full URL like http://, a relative path or an absolute path
