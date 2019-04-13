@@ -87,8 +87,7 @@ watch-html:
 .PHONY: watch-html
 
 html-prod:
-	$(BOUSSOLE) compile
-	$(OPTIMUS) build --settings-name production
+	$(OPTIMUS) build --settings-name settings/production
 .PHONY: html-prod
 
 build: mo css html
@@ -102,7 +101,7 @@ run:
 .PHONY: run
 
 run-prod:
-	$(OPTIMUS) runserver 0.0.0.0:8001 --settings-name production
+	$(OPTIMUS) runserver 0.0.0.0:8001 --settings-name settings/production
 .PHONY: run-prod
 
 flake:

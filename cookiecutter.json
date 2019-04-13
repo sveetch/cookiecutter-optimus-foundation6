@@ -3,6 +3,7 @@
     "directory_name": "{{ cookiecutter.project_name|lower|replace(' ', '_')|replace('-', '_') }}",
 
     "_copy_without_render": [
+        ".gitignore",
         "boussole.json",
         "requirements.txt",
         "locale",

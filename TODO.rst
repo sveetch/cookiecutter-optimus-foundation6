@@ -4,4 +4,11 @@
 - [x] Dont store CSS, build it on the fly;
 - [x] Dont store MO files, build them on the fly (optional?);
 - [x] Try to organize page views into a pages/ dir instead of unique file;
-- [ ] Try to organize settings envs into a settings/ dir instead of file at root;
+- [x] Try to organize settings envs into a settings/ dir instead of file at root;
+- [ ] Add last Foundation version (6.5.3);
+- [ ] Add last Sveetoy version (0.9.0);
+- [ ] Missing Foundation JS assets;
+- [ ] Init Foundation lib in main.js;
+- [ ] Add flake command to Makefile;
+- [ ] Add basic test with pytest?
+- [ ] Better README;

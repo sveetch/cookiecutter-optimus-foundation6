@@ -1,13 +1,23 @@
 # -*- coding: utf-8 -*-
 """
-Settings file for {{ cookiecutter.project_name }}
+Base settings for {{ cookiecutter.project_name }}
 """
 import os
 from webassets import Bundle
 
+# Register custom webasset filter for RCssMin minifier
+from webassets.filter import register_filter
+from {{ cookiecutter.directory_name }}.webassets_filters import RCSSMin
+register_filter(RCSSMin)
+
 DEBUG = True
 
-PROJECT_DIR = os.path.abspath(os.path.dirname(__file__))
+PROJECT_DIR = os.path.abspath(
+    os.path.join(
+        os.path.dirname(__file__),
+        "..",
+    )
+)
 
 # Common site name and domain to use available in templates
 SITE_NAME = '{{ cookiecutter.project_name }}'
@@ -37,22 +47,21 @@ STATIC_URL = 'static/'
 
 # Extra or custom bundles
 BUNDLES = {
-    'app_css': Bundle(
-        'css/app.css',
-        filters=None,
-        output='css/app.min.css'
+    'main_css': Bundle(
+        'css/main.css',
+        filters='rcssmin',
+        output='css/main.min.css'
     ),
-    'app_js': Bundle(
-        "js/app.js",
-        filters=None,
-        output='js/app.min.js'
+    'main_js': Bundle(
+        "js/main.js",
+        filters='rjsmin',
+        output='js/main.min.js'
     ),
 }
 
 # Sources files or directory to synchronize within the static directory
 FILES_TO_SYNC = (
-    #(SOURCE, DESTINATION)
-    #('images', 'images'),
-    #('fonts', 'fonts'),
+    #'images',
+    #'fonts',
     'css',
 )

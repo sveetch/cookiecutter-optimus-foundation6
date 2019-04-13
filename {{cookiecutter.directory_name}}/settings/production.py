@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Production settings file for project {{ cookiecutter.project_name }}
+Production settings for project {{ cookiecutter.project_name }}
 """
 from {{ cookiecutter.directory_name }}.settings import *
 

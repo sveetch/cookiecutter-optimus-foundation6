@@ -11,7 +11,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    {% block base_css %}{% assets "app_css" %}
+    {% block base_css %}{% assets "main_css" %}
         <link rel="stylesheet" href="{{ page_relative_position }}{{ ASSET_URL }}">
     {% endassets %}{% endblock %}
     {% block more_css %}{% endblock %}
@@ -21,7 +21,7 @@
 <body class="{% block body_classes %}lang-{{ page_lang.language_name }}{% endblock %}"{% block body_attrs %}{% endblock %}>
     {% block base_content %}{% endblock %}
 
-    {% block more_js %}{% assets "app_js" %}
+    {% block more_js %}{% assets "main_js" %}
         <script src="{{ page_relative_position }}{{ ASSET_URL }}"></script>
     {% endassets %}{% endblock %}
 </body>
