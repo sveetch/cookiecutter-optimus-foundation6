@@ -9,7 +9,7 @@
 - [X] Add last Sveetoy version (0.9.0);
 - [x] Missing Foundation JS assets;
 - [x] Init Foundation lib in main.js;
-- [ ] Better homepage using Foundation;
+- [x] Better homepage using Foundation;
 - [ ] Add flake command to Makefile;
 - [ ] Add basic test with pytest?
-- [ ] Better README;
+- [x] Better README;

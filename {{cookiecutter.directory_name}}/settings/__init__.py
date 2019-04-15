@@ -7,7 +7,7 @@ from webassets import Bundle
 
 # Register custom webasset filter for RCssMin minifier
 from webassets.filter import register_filter
-from {{ cookiecutter.directory_name }}.webassets_filters import RCSSMin
+from .webassets_filters import RCSSMin
 register_filter(RCSSMin)
 
 DEBUG = True
@@ -21,7 +21,7 @@ PROJECT_DIR = os.path.abspath(
 
 # Common site name and domain to use available in templates
 SITE_NAME = '{{ cookiecutter.project_name }}'
-SITE_DOMAIN = 'localhost'
+SITE_DOMAIN = 'localhost:8001'
 
 # Sources directory where the assets will be searched
 SOURCES_DIR = os.path.join(PROJECT_DIR, 'sources')
